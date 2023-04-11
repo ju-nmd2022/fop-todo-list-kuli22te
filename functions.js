@@ -16,7 +16,7 @@ function addItem() {
 
   CheckIcon.className = "fa-solid fa-check";
   CheckIcon.style.color = "lightgrey";
-  CheckIcon.addEventListener("click,", function () {
+  CheckIcon.addEventListener("click", function () {
     CheckIcon.style.color = "limegreen";
   });
 
