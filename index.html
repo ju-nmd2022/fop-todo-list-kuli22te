@@ -4,22 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/b8dae8fb64.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
-    <script src="functtions.js"></script>
-    <title>Document</title>
+    <title>To Do List</title>
   </head>
   <body>
-    <div class="container" id="container1">
+    <div class="container" id="nav-input">
       <div class="navigation" id="nav">
-        <head class="headline" id="to-do">
-          <h2>What to do?</h2>
-        </head>
-        <div class="input" id="">
-          <input class="input" id="input-task" type="text" /><button>
-            Send
-          </button>
+        <h2>What to do?</h2>
+        <div class="user-input" id="inputbox-btn">
+          <input class="inputbox" id="input" />
+          <button class="button" id="add-btn"></button>
         </div>
       </div>
     </div>
+    <div class="container" id="container-todos">
+      <div class="to-do-items" id="todos"></div>
+    </div>
+    <script src="functions.js"></script>
   </body>
 </html>
