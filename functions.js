@@ -1,6 +1,13 @@
+//Retrives elements from HTMl document, using ID and CLASS
+
 const toDoItems = document.getElementsByClassName("to-do-items")[0];
 const input = document.getElementById("input");
 const btn = document.getElementById("add-btn");
+
+//Adds eventlistner reload of web page
+//When the load event is triggered
+//function retrives stored data from LS
+//Which shows To do list with stored items
 
 window.addEventListener("load", function () {
   const items = this.localStorage.getItem("items");
