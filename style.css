@@ -10,8 +10,7 @@ body {
 }
 
 .container {
-  border: 1px solid black;
-  width: 45%;
+  width: 95%;
   margin: auto;
 }
 
@@ -20,12 +19,17 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 h2 {
   font-size: 2rem;
   color: antiquewhite;
+}
+
+.user-input {
+  width: 21.8rem;
+  text-align: center;
 }
 
 .user-input input {
@@ -50,6 +54,11 @@ h2 {
 }
 
 .to-do-items {
+  width: 31.2rem;
+  margin: auto;
+}
+
+.item {
   background-color: antiquewhite;
   display: flex;
   justify-content: space-between;
