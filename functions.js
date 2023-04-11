@@ -43,4 +43,8 @@ function addItem() {
   var trashIcon = document.createElement("i");
 
   divParent.className = "item";
+  divParent.dataset.checked = "false"; //
+  divParent.innerHTML = "<div>" + input.value + "</div>";
+
+  checkIcon.className = "fa-solid fa-check";
 }
