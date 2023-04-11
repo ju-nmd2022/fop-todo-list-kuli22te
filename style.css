@@ -34,7 +34,7 @@ h2 {
   text-align: center;
 }
 
-.user-input input {
+#input {
   width: 80%;
   outline: none;
   padding: 0.5rem;

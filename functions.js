@@ -1,4 +1,5 @@
 //The following code have been adapted from https://www.youtube.com/watch?v=H5tuwAO-_Kg&t=1536s Accessed: 2023-04-10 & 2023-04-11
+//course material have also been used as a foundation to learn the necessary tools to complet this assignment.
 
 //Retrives elements from HTMl document, using ID and CLASS
 
