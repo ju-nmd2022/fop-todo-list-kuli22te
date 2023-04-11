@@ -10,25 +10,35 @@ body {
 }
 
 .container {
+  display: flex;
+  justify-content: center;
   width: 95%;
   margin: auto;
+  padding-bottom: 3%;
 }
 
-.navigation {
+/*.navigation {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
   margin: 1.5rem 0;
+}*/
+
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 2%;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: antiquewhite;
 }
 
 .user-input {
-  width: 21.8rem;
+  width: 24rem;
   text-align: center;
 }
 
@@ -37,8 +47,7 @@ h2 {
   outline: none;
   padding: 0.5rem;
   border: 0.07rem solid white;
-  border-top-left-radius: 0.4rem;
-  border-bottom-left-radius: 0.4rem;
+  border-radius: 0.3rem;
 }
 
 #add-btn {
