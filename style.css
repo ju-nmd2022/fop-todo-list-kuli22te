@@ -17,14 +17,6 @@ body {
   padding-bottom: 3%;
 }
 
-/*.navigation {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 1.5rem 0;
-}*/
-
 header {
   display: flex;
   justify-content: center;
@@ -58,8 +50,7 @@ h2 {
   outline: none;
   background-color: antiquewhite;
   border: 0.07rem solid antiquewhite;
-  border-top-right-radius: 0.4rem;
-  border-bottom-right-radius: 0.4rem;
+  border-radius: 0.3rem;
 }
 
 .to-do-items {
@@ -90,6 +81,10 @@ h2 {
   margin: 0 0.3rem;
 }
 
+.completed {
+  text-decoration: line-through;
+}
+
 @media (max-width: 768px) {
   .navigation {
     align-items: center;
@@ -111,12 +106,12 @@ h2 {
 
 @media (max-width: 480px) {
   .user-input input {
-    width: 74%;
+    width: 65%;
   }
 }
 
 @media (max-width: 320px) {
   .user-input input {
-    width: 60%;
+    width: 70%;
   }
 }

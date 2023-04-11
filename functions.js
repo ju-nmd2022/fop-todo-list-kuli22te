@@ -18,6 +18,7 @@ window.addEventListener("load", function () {
       const checkIcon = item.querySelector(".fa-solid.fa-check");
       if (item.dataset.checked === "true") {
         checkIcon.style.color = "limegreen";
+        item.classList.add("completed");
       }
       const trashIcon = item.querySelector(".fa-solid.fa-trash");
       trashIcon.addEventListener("click", function () {
@@ -93,8 +94,10 @@ function toggleCheckIcon(checkIcon, item) {
   if (item.dataset.checked === "false") {
     checkIcon.style.color = "limegreen";
     item.dataset.checked = "true";
+    item.classList.add("completed");
   } else {
     checkIcon.style.color = "lightgrey";
     item.dataset.checked = "false";
+    item.classList.remove("completed");
   }
 }
