@@ -7,6 +7,8 @@ const toDoItems = document.getElementsByClassName("to-do-items")[0];
 const input = document.getElementById("input");
 const btn = document.getElementById("add-btn");
 
+//Retrives and loads items from LS stored in items var
+
 window.addEventListener("load", function () {
   const items = JSON.parse(localStorage.getItem("items"));
   if (items) {
@@ -48,6 +50,8 @@ window.addEventListener("load", function () {
   }
 });
 
+//adds item by clicking btn or enter key
+
 input.addEventListener("keydown", function (event) {
   if (event.key === "Enter") addItem();
 });
@@ -55,6 +59,8 @@ input.addEventListener("keydown", function (event) {
 btn.addEventListener("click", function () {
   addItem();
 });
+
+//function to create Items, incl text, check, trash and line through
 
 function addItem() {
   var divParent = document.createElement("div");
@@ -89,10 +95,12 @@ function addItem() {
   input.value = "";
 }
 
+//Function to save items in LS. items.push = text & checked properties of
+//each task added as a new item to items array
+
 function saveItems() {
   const itemList = toDoItems.querySelectorAll(".item");
   const items = [];
-
   itemList.forEach(function (item) {
     const itemText = item.textContent;
     const isChecked = item.dataset.checked;
@@ -103,6 +111,8 @@ function saveItems() {
   });
   localStorage.setItem("items", JSON.stringify(items));
 }
+
+//function toggles the checked state and changes looks of item acordingly
 
 function toggleCheckIcon(checkIcon, item) {
   if (item.dataset.checked === "false") {
