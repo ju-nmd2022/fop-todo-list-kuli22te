@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: cadetblue;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  margin: auto;
+  padding-bottom: 3%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+h2 {
+  font-size: 3rem;
+  color: antiquewhite;
+}
+
+.user-input {
+  width: 24rem;
+  text-align: center;
+}
+
+#input {
+  width: 80%;
+  outline: none;
+  padding: 0.5rem;
+  border: 0.07rem solid white;
+  border-radius: 0.3rem;
+}
+
+#add-btn {
+  cursor: pointer;
+  padding: 0.5rem;
+  width: fit-content;
+  transition: 1s;
+  outline: none;
+  background-color: antiquewhite;
+  border: 0.07rem solid antiquewhite;
+  border-radius: 0.3rem;
+}
+
+.to-do-items {
+  width: 31.2rem;
+  margin: auto;
+}
+
+.item {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border-radius: 0.13rem;
+  padding: 1rem;
+  color: darkslategray;
+  margin-top: 0.7rem;
+  text-transform: uppercase;
+}
+
+.item:hover {
+  box-shadow: 0 0 1.3rem grey;
+  border: 0.07rem solid grey;
+}
+
+.item i {
+  cursor: pointer;
+  margin: 0 0.3rem;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  h2 {
+    margin: 0.7rem 0;
+  }
+
+  .user-input {
+    width: 100%;
+  }
+
+  .to-do-items {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-input input {
+    width: 65%;
+  }
+}
+
+@media (max-width: 320px) {
+  .user-input input {
+    width: 70%;
+  }
+}
